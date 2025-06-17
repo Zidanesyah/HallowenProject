@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Monster Pick</title>
+</head>
+<body>
+    <h1>🎃 Monster Halloween Gallery 👻</h1>
+  <form id="monsterForm" autocomplete="off">
+    <input type="text" id="name" placeholder="Input Monster Name" required />
+    <textarea id="desc" placeholder="Monster Description" required></textarea>
+
+    <div id="monster-photos">
+      <label>
+        <input type="radio" name="monsterPhoto" value="./monster1.jpg" required>
+        <img src="./monster1.jpg"alt="Monster 1" />
+      </label>
+
+      <label>
+        <input type="radio" name="monsterPhoto" value="./monster2.webp">
+        <img src="./monster2.webp" alt="Monster 2" />
+      </label>
+
+      <label>
+        <input type="radio" name="monsterPhoto" value="./monster3.jpg">
+        <img src="./monster3.jpg" alt="Monster 3" />
+      </label>
+
+      <label>
+        <input type="radio" name="monsterPhoto" value="monster4.png">
+        <img src="monster4.png" alt="Monster 4" />
+      </label>
+
+    </div>
+
+    <button type="submit">Tambahkan Monster</button>
+  </form>
+  <hr>
+
+  <div id="monster-rack"></div>
+<script src="./index.js"></script>
+</body>
+</html>
